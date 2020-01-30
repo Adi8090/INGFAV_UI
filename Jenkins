@@ -3,7 +3,7 @@ pipeline {
 	stages {
       stage('SCM Checkout') {
          steps {
-            git 'https://github.com/awsasif8/Trading-UI.git'
+            git 'https://github.com/atulrockzz/INGFAV_UI.git'
 		}
 	}
 	stage('Build') {
