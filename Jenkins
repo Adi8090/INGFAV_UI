@@ -3,7 +3,7 @@ agent any
 stages{
 stage('Git Checkout'){
 steps{
-git 'https://github.com/atulrockzz/INGFavBank.git'
+git 'https://github.com/atulrockzz/INGFAV_UI.git'
      }                }
    stage('java build'){
    steps{
@@ -23,8 +23,8 @@ git 'https://github.com/atulrockzz/INGFavBank.git'
          }}
          stage('Tomcat Deploy'){
          steps{
-         deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://18.221.45.191:8888')], contextPath: 'Favbank', war: '**/*.war'
+         deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://18.221.45.191:8888')], contextPath: 'INGFAV_UI', war: '**/*.war'
   }}
 }
 }
-© 2020 GitHub, Inc.
+
