@@ -11,8 +11,8 @@ pipeline {
 			sh '''
 			npm install
 			npm update
-			npm run build
 			npm audit fix
+			npm run build
 			'''
 		}
 	}
