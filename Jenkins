@@ -20,7 +20,7 @@ pipeline {
 		steps {
 			sh '''
              cp -r $WORKSPACE/build /opt/apache-tomcat-10.0.13/webapps
-             curl -u admin:admin http://13.126.112.204:8888/manager/reload?path=/build 
+             curl -u admin:admin http://13.235.9.172:8888/manager/reload?path=/build 
              '''
 		}
 	}
